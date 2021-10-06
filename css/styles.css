@@ -224,6 +224,8 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   margin: 0 auto;
+  transition: background-color 250ms, color 250ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .button-primary:hover,
@@ -357,8 +359,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  /* margin-bottom: 50px; */
-  /* outline: 2px solid rgb(27, 2, 138); */
+
 }
 .command {
   display: flex;
@@ -383,8 +384,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  /* margin-bottom: 94px; */
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+
 }
 .command .command-section + .command-section {
   margin-left: 30px;
@@ -421,6 +421,7 @@ body {
 .command-iconbox {
   /* outline: 1px solid rgb(173, 14, 125); */
   border-radius: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .command-box .command-iconbox + .command-iconbox {
   margin-left: 12px;
@@ -433,16 +434,17 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .command-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .command-iconbox:hover,
 .command-iconbox:focus {
   background-color: var(--accent-color);
-  /* border-radius: 50%; */
 }
 .command-link:hover .command-icon,
 .command-link:focus .command-icon {
@@ -481,10 +483,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px; */
-  /* outline: 2px solid rgb(5, 194, 5); */
+
 }
 .clients-section-icon {
   display: flex;
@@ -494,7 +493,9 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
+  transition: border 250ms, border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
 .client-icon {
   display: flex;
   align-items: center;
@@ -502,6 +503,7 @@ body {
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-section-icon:hover .client-icon,
 .clients-section-icon:focus .client-icon {
@@ -563,7 +565,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  
 }
 
 .footer-address {
@@ -575,7 +576,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 60px;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav .link:hover,
@@ -585,7 +586,6 @@ body {
 
 .footer-link {
   margin-bottom: 9px;
- 
 }
 .about-address {
   /* outline: 2px solid rgb(2, 0, 128);  */
@@ -616,7 +616,6 @@ body {
   display: flex;
 }
 .footer-command-iconbox {
-
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -704,7 +703,8 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  transition: background-color 250ms, color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms, color 250ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------- Projects--------------------------  */
@@ -717,7 +717,6 @@ body {
   margin-top: -30px;
   background-color: #ffffff;
   align-items: center;
-
 }
 
 .project-section {
@@ -758,5 +757,3 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: 1px solid rgba(0, 0, 0, 0.15);
 }
-
-
