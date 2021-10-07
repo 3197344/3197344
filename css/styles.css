@@ -743,6 +743,7 @@ bottom: -1px;
 }
 .project-top-wrapper{
   position: relative;
+  overflow: hidden;
 }
 
 .project-text{
@@ -790,7 +791,10 @@ padding-bottom: 63px;
 }
 
 .project-section:hover,
-.project-section:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.project-section:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: 1px solid rgba(0, 0, 0, 0.15);
+}
+.project-section:hover .project-text{
+transform: translateY(0);
 }
