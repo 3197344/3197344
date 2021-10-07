@@ -749,7 +749,7 @@ bottom: -1px;
 .project-text{
 position: absolute;
 top: 0;
-left: 0;
+
 transform: translateY(100%);
 
 font-weight: 400;
@@ -764,7 +764,11 @@ padding-left: 24px;
 padding-right: 24px;
 padding-top: 63px;
 padding-bottom: 63px;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.project-box{
+  text-decoration: none;
 }
 .project-title {
   margin-bottom: 4px;
@@ -792,9 +796,12 @@ padding-bottom: 63px;
 
 .project-section:hover,
 .project-section:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: 1px solid rgba(0, 0, 0, 0.15);
 }
 .project-section:hover .project-text{
+transform: translateY(0);
+}
+.project-box:focus .project-text{
 transform: translateY(0);
 }
